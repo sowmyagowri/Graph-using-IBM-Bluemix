@@ -1,5 +1,4 @@
-{
-	"propertyKeys": [
+{	"propertyKeys": [
 		{"name": "employee_name","dataType": "String","cardinality": "SINGLE"},
 		{"name": "id","dataType": "Integer","cardinality": "SINGLE"},
 		{"name": "gender","dataType": "String","cardinality": "SINGLE"},
