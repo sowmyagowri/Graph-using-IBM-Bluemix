@@ -1,0 +1,57 @@
+{
+	"propertyKeys": [
+		{"name": "employee_name","dataType": "String","cardinality": "SINGLE"},
+		{"name": "id","dataType": "Integer","cardinality": "SINGLE"},
+		{"name": "gender","dataType": "String","cardinality": "SINGLE"},
+		{"name": "department_name","dataType": "String","cardinality": "SINGLE"},
+		{"name": "strength","dataType": "Integer","cardinality": "SINGLE"},
+		{"name": "manager","dataType": "String","cardinality": "SINGLE"},
+		{"name": "project_name","dataType": "String","cardinality": "SINGLE"},
+		{"name": "project_manager","dataType": "String","cardinality": "SINGLE"}
+	],
+	"vertexLabels": [
+		{"name": "Employee"},
+		{"name": "Department"},
+		{"name": "Project"}
+	],
+	"edgeLabels": [
+		{"name": "works_on","multiplicity": "SIMPLE"},
+		{"name": "has","multiplicity": "MULTI"},
+		{"name": "works_in","multiplicity": "SIMPLE"}
+	],
+	"vertexIndexes": [
+		{"name": "vByEmpName",
+		"propertyKeys": ["employee_name"],
+		"composite": true,
+		"unique": false},
+		{"name": "vById",
+		"propertyKeys": ["id"],
+		"composite": true,
+		"unique": true},
+		{"name": "vByGender",
+		"propertyKeys": ["gender"],
+		"composite": true,
+		"unique": false},
+		{"name": "vByDeptName",
+		"propertyKeys": ["department_name"],
+		"composite": true,
+		"unique": true},
+		{"name": "vByStrength",
+		"propertyKeys": ["strength"],
+		"composite": true,
+		"unique": false},
+		{"name": "vByManager",
+		"propertyKeys": ["manager"],
+		"composite": true,
+		"unique": false},
+		{"name": "vByProjectName",
+		"propertyKeys": ["project_name"],
+		"composite": true,
+		"unique": true},
+		{"name": "vByProjectManager",
+		"propertyKeys": ["project_manager"],
+		"composite": true,
+		"unique": false}
+	],
+	"edgeIndexes": []
+}
