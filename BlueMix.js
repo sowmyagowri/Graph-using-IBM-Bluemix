@@ -18,9 +18,9 @@ app.listen(appEnv.port, '0.0.0.0', function (){
 });
 
 var apiURL; var username; var password; var baseURL;
-apiURL = 'https://ibmgraph-alpha.ng.bluemix.net/959048b6-f762-4155-8bd0-075389acb00c/g';
-username = '3fa44c55-e0d3-4cdf-83f9-4a5566535ebd';
-password = '26068eb0-d596-4e4e-88f4-fb65607aa02b';
+apiURL = '<api URL>';
+username = '<username>';
+password = '<password>';
 baseURL = apiURL.split('/g').join('');
 
 var sessionToken;
