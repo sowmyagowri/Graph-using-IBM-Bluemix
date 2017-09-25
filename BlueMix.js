@@ -174,7 +174,7 @@ function createEdges(vertex1, vertex2, vertex3){
 }
 
 function runGremlin(vertex1, vertex2, vertex3){
-	// Finally, run a gremlin traversal.
+    // Finally, run a gremlin traversal.
     // We would like to return (find) all the vertices connected by
     // an incoming edge from our employee vertex
 	var body = {
